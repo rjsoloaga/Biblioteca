@@ -1,0 +1,5 @@
+HOST=localhost
+DB=biblioteca
+USER=biblioteca
+PASS=contraseña_segura
+PORT=5432
