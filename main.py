@@ -71,7 +71,7 @@ def guardar():
     signatura = entry_signatura.get()
     numero_inventario = entry_numero_inventario.get()
 
-    if titulo and autor and numero_inventario and signatura:
+    if titulo and autor and numero_inventario:
         exito = base_datos.guardar_inventario(1, titulo, autor, numero_inventario, signatura)
         
         if exito:
