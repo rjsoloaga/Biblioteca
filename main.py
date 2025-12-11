@@ -134,8 +134,7 @@ def actualizar_inventario():
     signatura = entry_signatura.get()
     numero_inventario = entry_numero_inventario.get()
 
-    if titulo and autor and signatura and numero_inventario:
-        # Corregido: El orden debe ser igual al definido en base_datos.py (signatura antes de numero_inventario)
+    if titulo and autor and numero_inventario:
         exito = base_datos.actualizar_inventario(id_inventario, titulo, autor, signatura, numero_inventario)
 
         if exito:
